@@ -5,13 +5,13 @@ function emailsend() {
     let textmsg = document.getElementById("message").value;
     let  messagebody = "Name:" + username +
     "<br/> Email Id: " +  email +
-    "<br/> Contact No" + contact ;
-    "<br/> Message:"  +  textmsg;
+    "<br/> Contact No:" + contact ;
+    "<br/> Message :"  +  textmsg;
 
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "luxurybag.india@gmail.com",
-        Password : "F6121E5AD2471A0AF4834EB31E5BB046BBA5",
+        Password : "C79FE4EF1B12E1D72485DA27901A416A5163",
         To : "luxurybag.india@gmail.com",
         From :"luxurybag.india@gmail.com",
         Subject : "Subject",

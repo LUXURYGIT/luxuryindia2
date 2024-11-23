@@ -4,18 +4,33 @@ body{
     font-weight: 400;
 }
 /* styling menu icon */
+.tittlebar{
+    border-radius: 50%;
+}
 .nav-menu{
     border: none;
     background-color: #fff;
     font-size: 1.5rem;
     color: #fca61f;
 }
-nav{
+/* nav{
     width: 100% !important;
     overflow: hidden !important;
     position: fixed !important;
     top: 0%;
     z-index: 6;
+} */
+ header{
+    position: fixed;
+    top: 0%;
+    overflow: hidden;
+    width: 100%;
+ }
+.stickywhatsapp{
+    position: fixed;
+    z-index: 10;
+    right:  20px;
+    bottom: 10%;
 }
 /* styling navbar links  */
  .navbar-nav a:hover{
@@ -48,7 +63,7 @@ nav{
     color: white !important;
 }
 /* styling home section starts */
-.home{
+/* .home{
     background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
     padding: 30px 0px 10px 0px;
 }
@@ -56,36 +71,11 @@ nav{
     margin-top: 40px;
     font-size: 3rem;
     line-height: 4rem;
-}
+} */
 .c-orange{
     color: #6f34fe;
     font-weight: 700;
     font-size: 4rem;
-}
-.home p{
-    width: fit-content;
-    margin-top: 1rem;
-    font-size: 1.2rem;
-}
-.c-btn2{
-    overflow: hidden;
-    border: none;
-    font-size: 20px;
-    color: #211e39 !important;
-    letter-spacing: 2px;
-    background: #fca61f;
-}
-.c-btn2:hover{
-    background: whitesmoke !important;
-    color: #211e39 !important;
-    border: 1px solid #fca61f;
-}
-.c-btn2 a:hover{
-    color: #211e39;
-}
-.c-btn2 a{
-    text-decoration: none;
-    color: white;
 }
 .h-btn:hover{
     background: #6f34fe;
@@ -118,11 +108,6 @@ nav{
 .link:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
-}
-/* adding animation to home section image  */
-.home img{
-    overflow: hidden;
-    animation: floatimg 4s ease-in-out infinite;
 }
 @keyframes floatimg {
     0%{
@@ -168,7 +153,6 @@ nav{
     padding: 15px 15px;
     border-radius: 0.7rem;
 }
-
 /* portfolio section starts */
 #myBtnContainer{
     margin-bottom: 45px;
@@ -197,7 +181,9 @@ nav{
 .post .card{
     border: none;
 }
-
+.service-card .img img{
+    overflow: hidden !important;
+}
 /* testimonial section starts */
 .testimonial{
     overflow: hidden !important;
@@ -311,6 +297,14 @@ nav{
 footer{
     background-color: #211e39;
 }
+.text-muted a{
+    text-decoration: none;
+    color: #6c757d;
+}
+.text-muted a:hover{
+    color: #fca61f;
+
+}
 
 footer .link-group a{
     margin-left: 10px;
@@ -323,24 +317,6 @@ footer .link-group a{
 footer .link-group a:hover{
     color: #fca61f;
 }
-/* .social-links button{
-    border: none;
-    margin-right: 1rem;
-    font-size: 1.2rem;
-    background-color: #fff;
-    padding: 14px 15px 10px 15px;
-}
-.social-links .dribble{
-    color: #f33a7e;
-}
-.social-links button:hover{
-    color: #fff;
-    transform: translateY(-20px);
-    transition-duration: 1s;
-} */
-/* .social-links .dribble:hover{
-    background-color: #f33a7e;
-} */
 .social-links .whatsappbtn{
     color: #25D366;
 }

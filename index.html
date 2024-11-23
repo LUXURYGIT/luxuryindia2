@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luxury Bags</title>
+    <title>luxuryBags</title>
 
     <!-- bootstrap css cdn link  -->
     <link
@@ -13,7 +13,6 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-
     <!-- custom css file -->
     <link rel="stylesheet" href="css/style.css" />
 
@@ -24,6 +23,8 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="images/luxurybaglogotittlebarpng.jpg" alt="luxurybags tittlebar logo"
+        type="image/x-icon" />
     <!-- bootstrap icon cdn link  -->
     <link
       rel="stylesheet"
@@ -39,12 +40,12 @@
   </head>
   <body>
     <!-- navbar starts -->
-    <nav
+    <header
       id="navbar-top"
       class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
     >
       <div class="container-fluid px-5">
-        <img src ="./images/Luxury logo.png" width="220px" height="70px">
+        <a href=""><img src ="./images/Luxury logo.png" width="220px" height="70px"></a>
         <button
           class="nav-menu d-md-none"
           type="button"
@@ -57,7 +58,7 @@
           class="collapse navbar-collapse justify-content-center"
           id="navbarNav"
         >
-          <ul class="navbar-nav gap-4" style="font-size: 1.3rem">
+          <ul class="navbar-nav gap-3" style="font-size: 1.3rem">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
@@ -78,13 +79,14 @@
         </div>
         <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block"><a href="#contact" class="nav-btn">Contact</a></button>
       </div>
-    </nav>
+    </header>
     <!-- navbar ends here -->
 
     <!-- home section starts  -->
-    <section class="home pt-5 pb-5" id="home">
-      <div class="row justify-content-evenly align-middle">
-        <!-- here data-aos is used for adding aos animation  -->
+    <!-- <section class="home pt-5 pb-5" id="home"> -->
+
+
+      <!-- <div class="row justify-content-evenly align-middle">
         <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
           <h2 style="color: #3f396d">
             <br /><span class="c-orange">LUXURY BAGS</span>
@@ -99,10 +101,52 @@
         <div class="col-10 col-md-4">
           <img src="./images/CL04-min.png" class="img-fluid" alt="" />
         </div>
-      </div>
-    </section>
+      </div> -->
+    <!-- </section> -->
     <!-- home section ends here -->
-
+    <div id="carouselExampleDark" class="carousel carousel-dark slide position-relative" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="images/homebannerimg/luxurybag1.png" class="d-block w-100" alt="...">
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div> -->
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/homebannerimg/luxurybag2.png" class="d-block w-100" alt="...">
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div> -->
+        </div>
+        <div class="carousel-item banner3">
+          <img src="images/homebannerimg/luxurybag3.jpg" class="d-block w-100" alt="...">
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div> -->
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="social-links mt-4 stickywhatsapp" data-aos="fade-up">
+      <a href="https://wa.me/917397571686?text= hi,"target="_blank" class="whatsappbtn">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+    </div>
     <!-- our products section starts -->
     <section class="expertise mt-5" id="service">
       <div class="heading text-center">
@@ -112,7 +156,7 @@
         </h3>
       </div>
       <div class="row justify-content-evenly mt-5">
-        <div class="col-10 col-md-4 col-sm- " data-aos="fade-up">
+        <div class="col-6 col-md-3 col-sm-6 col-xs-6" data-aos="fade-up">
           <div class="service-card">
             <div class="img">
               <img
@@ -122,16 +166,11 @@
               />
             </div>
             <div class="content mt-3">
-              <h4>School bag</h4>
-              <!--<p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum neces aibus minima veniam.
-              </p>
-              <a href="" class="link">Read More</a>-->
+              <!-- <h4>School bag</h4> -->
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-10 col-sm-1 " data-aos="fade-up">
+        <div class="col-md-3 col-6 col-sm-6 col-xs-6" data-aos="fade-up">
           <div class="service-card">
             <div class="img">
               <img
@@ -141,16 +180,11 @@
               />
             </div>
             <div class="content mt-3">
-              <h4>school bags</h4>
-              <!--<p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum neces aibus minima veniam.
-              </p>
-              <a href="" class="link">Read More</a>-->
+              <!-- <h4>school bags</h4> -->
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-10  col-xs-1" data-aos="fade-up">
+        <div class="col-md-3 col-6  col-sm-6 col-xs-6" data-aos="fade-up">
           <div class="service-card">
             <div class="img">
               <img
@@ -160,39 +194,41 @@
               />
             </div>
             <div class="content mt-3">
-               <h4>school bags</h4> 
-              <!--<p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum neces aibus minima veniam.
-              </p>
-              <a href="" class="link">Read More</a>-->
+               <!-- <h4>school bags</h4>  -->
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-10" data-aos="fade-up">
+        <div class="col-md-3 col-6 col-sm-6 col-xs-6" data-aos="fade-up">
           <div class="service-card">
             <div class="img">
               <img
-                src="./images/CL05-min.png"
+                src="./images/long03-min.png"
                 class="w-26 img-fluid img"
                 alt=""
               />
             </div>
             <div class="content mt-3">
-             <!-- <h4>school bags</h4>-->
-              <!--<p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum neces aibus minima veniam.
-              </p>
-              <a href="" class="link">Read More</a>-->
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-10" data-aos="fade-up">
+        <div class="col-md-3 col-6 col-sm-6 col-xs-6" data-aos="fade-up">
           <div class="service-card">
             <div class="img">
               <img
-                src="./images/CL06-min.png"
+                src="./images/BP01-min.png"
+                class="w-26 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 col-sm-6 col-xs-6" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="./images/BP04-min.png"
                 class="w-26 img-fluid img"
                 alt=""
               />
@@ -207,11 +243,30 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-10" data-aos="fade-up">
+        <div class="col-md-3 col-6 col-sm-6 col-xs-6" data-aos="fade-up">
           <div class="service-card">
             <div class="img">
               <img
-                src="./images/CL07-min.png" 
+                src="./images/BP05-min.png"
+                class="w-26 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <!--<h4>school bags</h4>-->
+              <!--<p class="text-muted">
+                Dolor repellendus temporibus autem quibusdam officiis debitis
+                rerum neces aibus minima veniam.
+              </p>
+              <a href="" class="link">Read More</a>-->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 col-sm-6 col-xs-6" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="./images/BP06-min.png" 
                 class="w-26 img-fluid img"
                 alt=""
               />
@@ -457,126 +512,7 @@
                       </p>
                       <h4>khan</h4>
                       <small class="fs-6 text-muted">CEO of Company</small>-->
-                      <img src="./images/CL01.png" width="250px" height="300px">
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-evenly">
-                    <div class="col-2 text-center">
-                      <i class="bi bi-quote"></i>
-                    </div>
-                    <div class="col-10">
-                      <!--<p class="text-muted">
-                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
-                        consecteaur aeci velit, sed quia non numquam eius modi
-                        tempora incidunt ut lao magnam aliquam quaerat ...
-                      </p>
-                      <h4>khan</h4>
-                      <small class="fs-6 text-muted">CEO of Company</small>-->
                       <img src="./images/SC01-min.png" width="250px" height="300px">
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-evenly">
-                    <div class="col-2 text-center">
-                      <i class="bi bi-quote"></i>
-                    </div>
-                    <div class="col-10">
-                      <!--<p class="text-muted">
-                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
-                        consecteaur aeci velit, sed quia non numquam eius modi
-                        tempora incidunt ut lao magnam aliquam quaerat ...
-                      </p>
-                      <h4>khan</h4>
-                      <small class="fs-6 text-muted">CEO of Company</small>-->
-                      <img src="./images/SC02-min.png" width="250px" height="300px">
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-evenly">
-                    <div class="col-2 text-center">
-                      <i class="bi bi-quote"></i>
-                    </div>
-                    <div class="col-10">
-                      <!--<p class="text-muted">
-                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
-                        consecteaur aeci velit, sed quia non numquam eius modi
-                        tempora incidunt ut lao magnam aliquam quaerat ...
-                      </p>
-                      <h4>khan</h4>
-                      <small class="fs-6 text-muted">CEO of Company</small>-->
-                      <img src="./images/BP03.png" width="300px" height="300px">
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-evenly">
-                    <div class="col-2 text-center">
-                      <i class="bi bi-quote"></i>
-                    </div>
-                    <div class="col-10">
-                      <!--<p class="text-muted">
-                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
-                        consecteaur aeci velit, sed quia non numquam eius modi
-                        tempora incidunt ut lao magnam aliquam quaerat ...
-                      </p>
-                      <h4>khan</h4>
-                      <small class="fs-6 text-muted">CEO of Company</small>-->
-                      <img src="./images/CL08-min-removebg-preview.png" width="300px" height="300px">
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-evenly">
-                    <div class="col-2 text-center">
-                      <i class="bi bi-quote"></i>
-                    </div>
-                    <div class="col-10">
-                      <!--<p class="text-muted">
-                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
-                        consecteaur aeci velit, sed quia non numquam eius modi
-                        tempora incidunt ut lao magnam aliquam quaerat ...
-                      </p>
-                      <h4>khan</h4>
-                      <small class="fs-6 text-muted">CEO of Company</small>-->
-                      <img src="./images/CL09-min-removebg-preview.png" width="300px" height="300px">
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-evenly">
-                    <div class="col-2 text-center">
-                      <i class="bi bi-quote"></i>
-                    </div>
-                    <div class="col-10">
-                      <!--<p class="text-muted">
-                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
-                        consecteaur aeci velit, sed quia non numquam eius modi
-                        tempora incidunt ut lao magnam aliquam quaerat ...
-                      </p>
-                      <h4>khan</h4>
-                      <small class="fs-6 text-muted">CEO of Company</small>-->
-                      <img src="./images/SC04-min-removebg-preview.png" width="300px" height="300px">
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-evenly">
-                    <div class="col-2 text-center">
-                      <i class="bi bi-quote"></i>
-                    </div>
-                    <div class="col-10">
-                      <!--<p class="text-muted">
-                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
-                        consecteaur aeci velit, sed quia non numquam eius modi
-                        tempora incidunt ut lao magnam aliquam quaerat ...
-                      </p>
-                      <h4>khan</h4>
-                      <small class="fs-6 text-muted">CEO of Company</small>-->
-                      <img src="./images/SC05-min-removebg-preview.png" width="250px" height="300px">
                     </div>
                   </div>
                 </div>
@@ -603,7 +539,7 @@
                       <i class="bi bi-quote"></i>
                     </div>
                     <div class="col-10">
-                      <img src="./images/BP02.png" width="300px" height="300px">
+                      <img src="./images/SC02-min.png" width="250px" height="300px">
                     </div>
                   </div>
                 </div>
@@ -686,15 +622,10 @@
               alt="..."
             />
             <div class="card-body px-4">
-              <!--<small>By Pawan Kumavat</small
-              ><span class="ms-3">Mar 8,2022</span>-->
+             
               <h4 class="card-title">
                 <a href="">BAGS</a>
               </h4>
-              <!--<p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum nece aibus minima veniam.
-              </p>-->
               <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Like More</a>
             </div>
           </div>
@@ -702,20 +633,14 @@
         <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
           <div class="card">
             <img
-              src="./images/BP001-min.png"
+              src="./images/BP001.png"
               class="card-img-top rounded-4"
               alt="..."
             />
             <div class="card-body px-4">
-              <!--<small>By Pawan Kumavat</small
-              ><span class="ms-3">Mar 8,2022</span>-->
               <h4 class="card-title">
                 <a href="">BAGS</a>
               </h4>
-              <!--<p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum nece aibus minima veniam.
-              </p>-->
               <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Like more</a>
             </div>
           </div>
@@ -1037,13 +962,6 @@
               />
             </div>
             <div class="mb-3">
-              <!-- <textarea
-                class="form-control"
-                id="message"
-                name="messages"
-                placeholder="Message"
-                rows="5"
-              ></textarea> -->
               <input
                 type="text"
                 class="form-control message"
@@ -1063,13 +981,13 @@
     <!-- contact section ends here -->
 
       <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
-    <button
+    <!-- <button
       type="button"
       class="btn btn-floating btn-lg rounded-pill"
       id="btn-back-to-top"
     >
       <i class="bi bi-arrow-up"></i>
-    </button>
+    </button> -->
 
     <!-- footer section starts  -->
     <footer class="text-center text-muted py-4">
@@ -1102,7 +1020,8 @@
         </button> -->
       </div>
       <hr class="text-muted my-4" />
-      <p>Copyright 2024 | All Rights Reserved.</p>
+      <p>Copyright © 2024. All Rights Reserved.
+      <br>Site crafted by <a href="https://nothingfirst.in" target="_blank" title="css templates">NothingFirst</a></p>
     </footer>
     <!-- footer section ends here -->
 
@@ -1112,6 +1031,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+
 
     <!-- AOS library javascript link  -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -1125,7 +1045,7 @@
     <!-- custom js file linking -->
     <script src="js/script.js"></script>
     <script src="js/form.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     </script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
